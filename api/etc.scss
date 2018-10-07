@@ -1,0 +1,56 @@
+@mixin rb-bg-cover () {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+@mixin rb-icon-code($code: 'help') {
+  &:before {
+    content: $code;
+  }
+}
+
+@mixin rb-icon-label_x($code: 'help', $size: inherit, $icon-v-alignment: baseline, $icon-h-alignment: 0, $icon-width: auto, $distance: 0.5) {
+  @include rb-flex();
+  @if $icon-v-alignment == baseline {
+    @include rb-flex-align-items_baseline();
+  }
+
+  @include rb-icon-code($code);
+
+  &:before {
+    @include rb-padding-r_x($distance);
+    font-family: 'Material Icons', serif;
+    @include rb-f-reset();
+    font-size: if($size == inherit, $size, $size * 1rem);
+    text-align: center;
+    width: if($icon-width == auto, $icon-width, $icon-width * 1rem);
+
+    @if $icon-v-alignment != baseline {
+      @include rb-margin-t_x($icon-v-alignment);
+    }
+    @if $icon-h-alignment != 0 {
+      @include rb-margin-l_x($icon-h-alignment);
+    }
+  }
+}
+
+@mixin rb-bg-color($color: inherit, $h-color: false, $transition-time: 0) {
+  background-color: $color;
+
+  @if $h-color != false {
+    &:hover {
+      background-color: $h-color;
+    }
+  }
+
+  @if $transition-time > 0 {
+    @include rb-transition(background-color, $transition-time);
+  }
+}
+
+@mixin rb-disabled() {
+  cursor: not-allowed;
+  pointer-events: none;
+}

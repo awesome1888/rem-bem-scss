@@ -1,0 +1,124 @@
+
+/* margins */
+
+@for $i from 1 through 5 {
+
+  $prev: $i - 1;
+  $half: $i - 0.5;
+
+  .rb-margin_x#{if($i == 1, '', $i)} {
+	@include rb-margin_x($i);
+  }
+  .rb-margin_x#{$prev}p5 {
+	@include rb-margin_x($half);
+  }
+
+  .rb-margin-t_x#{if($i == 1, '', $i)} {
+	@include rb-margin-t_x($i);
+  }
+  .rb-margin-t_x#{$prev}p5 {
+	@include rb-margin-t_x($half);
+  }
+
+  .rb-margin-b_x#{if($i == 1, '', $i)} {
+	@include rb-margin-b_x($i);
+  }
+  .rb-margin-b_x#{$prev}p5 {
+	@include rb-margin-b_x($half);
+  }
+
+  .rb-margin-l_x#{if($i == 1, '', $i)} {
+	@include rb-margin-l_x($i);
+  }
+  .rb-margin-l_x#{$prev}p5 {
+	@include rb-margin-l_x($half);
+  }
+
+  .rb-margin-r_x#{if($i == 1, '', $i)} {
+	@include rb-margin-r_x($i);
+  }
+  .rb-margin-r_x#{$prev}p5 {
+	@include rb-margin-r_x($half);
+  }
+
+  .rb-margin-tb_x#{if($i == 1, '', $i)} {
+	@include rb-margin-tb_x($i);
+  }
+  .rb-margin-tb_x#{$prev}p5 {
+	@include rb-margin-tb_x($half);
+  }
+
+  .rb-margin-lr_x#{if($i == 1, '', $i)} {
+	@include rb-margin-lr_x($i);
+  }
+  .rb-margin-lr_x#{$prev}p5 {
+	@include rb-margin-lr_x($half);
+  }
+}
+
+/* paddings */
+
+@for $i from 1 through 5 {
+
+  $prev: $i - 1;
+  $half: $i - 0.5;
+
+  .rb-padding_x#{if($i == 1, '', $i)} {
+	@include rb-padding_x($i);
+  }
+  .rb-padding_x#{$prev}p5 {
+	@include rb-padding_x($half);
+  }
+
+  .rb-padding-t_x#{if($i == 1, '', $i)} {
+	@include rb-padding-t_x($i);
+  }
+  .rb-padding-t_x#{$prev}p5 {
+	@include rb-padding-t_x($half);
+  }
+
+  .rb-padding-b_x#{if($i == 1, '', $i)} {
+	@include rb-padding-b_x($i);
+  }
+  .rb-padding-b_x#{$prev}p5 {
+	@include rb-padding-b_x($half);
+  }
+
+  .rb-padding-l_x#{if($i == 1, '', $i)} {
+	@include rb-padding-l_x($i);
+  }
+  .rb-padding-l_x#{$prev}p5 {
+	@include rb-padding-l_x($half);
+  }
+
+  .rb-padding-r_x#{if($i == 1, '', $i)} {
+	@include rb-padding-r_x($i);
+  }
+  .rb-padding-r_x#{$prev}p5 {
+	@include rb-padding-r_x($half);
+  }
+
+  .rb-padding-tb_x#{if($i == 1, '', $i)} {
+	@include rb-padding-tb_x($i);
+  }
+  .rb-padding-tb_x#{$prev}p5 {
+	@include rb-padding-tb_x($half);
+  }
+
+  .rb-padding-lr_x#{if($i == 1, '', $i)} {
+	@include rb-padding-lr_x($i);
+  }
+  .rb-padding-lr_x#{$prev}p5 {
+	@include rb-padding-lr_x($half);
+  }
+}
+
+/* groups */
+
+.rb-group_x {
+  @include rb-group_x();
+}
+
+.rb-group_x0p5 {
+  @include rb-group_x(0.5);
+}

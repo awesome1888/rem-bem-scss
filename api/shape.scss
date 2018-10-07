@@ -1,0 +1,91 @@
+@mixin rb-height-trick($width: 100%) {
+  position: relative;
+  width: $width;
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@mixin rb-rectangle_x($width: 1, $height: $width) {
+  height: $height * 1rem;
+  width: $width * 1rem;
+}
+
+@mixin rb-smooth-corners_x($radius: 0.1) {
+  border-radius: $radius * 1rem;
+}
+
+/* margins */
+
+@mixin rb-margin_x($size-h: 1, $size-w: $size-h) {
+  margin: $size-h * 1rem $size-w * 1rem;
+}
+
+@mixin rb-margin-t_x($size: 1) {
+  margin-top: $size * 1rem;
+}
+
+@mixin rb-margin-b_x($size: 1) {
+  margin-bottom: $size * 1rem;
+}
+
+@mixin rb-margin-l_x($size: 1) {
+  margin-left: $size * 1rem;
+}
+
+@mixin rb-margin-r_x($size: 1) {
+  margin-right: $size * 1rem;
+}
+
+@mixin rb-margin-lr_x($size: 1) {
+  margin-right: $size * 1rem;
+  margin-left: $size * 1rem;
+}
+
+@mixin rb-margin-tb_x($size: 1) {
+  margin-top: $size * 1rem;
+  margin-bottom: $size * 1rem;
+}
+
+/* paddings */
+
+@mixin rb-padding_x($size-h: 1, $size-w: $size-h) {
+  padding: $size-h * 1rem $size-w * 1rem;
+}
+
+@mixin rb-padding-t_x($size: 1) {
+  padding-top: $size * 1rem;
+}
+
+@mixin rb-padding-b_x($size: 1) {
+  padding-bottom: $size * 1rem;
+}
+
+@mixin rb-padding-l_x($size: 1) {
+  padding-left: $size * 1rem;
+}
+
+@mixin rb-padding-r_x($size: 1) {
+  padding-right: $size * 1rem;
+}
+
+@mixin rb-padding-lr_x($size: 1) {
+  padding-right: $size * 1rem;
+  padding-left: $size * 1rem;
+}
+
+@mixin rb-padding-tb_x($size: 1) {
+  padding-top: $size * 1rem;
+  padding-bottom: $size * 1rem;
+}

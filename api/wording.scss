@@ -1,0 +1,43 @@
+@mixin rb-f-size_x($size: 1) {
+  font-size: $size * 1rem;
+  line-height: 150%;
+}
+
+@mixin rb-f-reset() {
+  font-style: normal;
+  letter-spacing: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin rb-f-color($color: inherit, $h-color: $color, $transition-time: 0) {
+  color: $color;
+  &:focus, &:active {
+    color: $color;
+  }
+
+  @if $h-color != $color {
+    &:hover {
+      color: $h-color;
+    }
+  }
+
+  @if $transition-time > 0 {
+    @include rb-transition(color, $transition-time);
+  }
+}
+
+@mixin rb-dashed-underline($mode: hover, $thickness: 1px, $color: currentcolor, $transition-time: 0) {
+  @if $mode == hover {
+    border: 0 none;
+    border-bottom: $thickness dashed transparent;
+    &:hover {
+      border-bottom: $thickness dashed $color;
+    }
+  }
+
+  @if $transition-time > 0 {
+    @include rb-transition(border-color, $transition-time);
+  }
+}
