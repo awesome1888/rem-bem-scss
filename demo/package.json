@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "foundation-sites": "^6.5.0-rc.3",
+    "highlight.js": "^9.12.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4",
@@ -14,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage" : "https://awesome1888.github.io/rem-bem-scss",
+  "homepage": "https://awesome1888.github.io/rem-bem-scss",
   "eslintConfig": {
     "extends": "react-app"
   },
