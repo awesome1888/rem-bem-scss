@@ -14,6 +14,8 @@ A SCSS macros library that is useful for rem-based markups in the best tradition
 @import 'rem-bem-scss/index.scss';
 ~~~~
 
+[Demo media kit](https://awesome1888.github.io/rem-bem-scss/)
+
 ## License
 
 MIT
