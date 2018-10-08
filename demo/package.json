@@ -14,6 +14,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage" : "https://awesome1888.github.io/rem-bem-scss",
   "eslintConfig": {
     "extends": "react-app"
   },
