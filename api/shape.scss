@@ -17,9 +17,17 @@
   }
 }
 
-@mixin rb-rectangle_x($width: 1, $height: $width) {
-  height: $height * 1rem;
-  width: $width * 1rem;
+@mixin rb-rectangle_x($width: 1, $height: $width, $scale: 1) {
+  @if ($height == false) {
+    $height: $width;
+  }
+
+  height: $height * $scale * 1rem;
+  width: $width * $scale * 1rem;
+}
+
+@mixin rb-round() {
+  border-radius: 99999rem;
 }
 
 @mixin rb-smooth-corners_x($radius: 0.1) {
