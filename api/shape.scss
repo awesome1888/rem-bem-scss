@@ -41,19 +41,19 @@
   margin-left: $size;
 }
 
-@mixin rb-margin-tb_x($size: 1rem) {
+@mixin rb-margin-tb($size: 1rem) {
   margin-top: $size;
   margin-bottom: $size;
 }
 
 /* paddings */
 
-@mixin rb-padding-lr_x($size: 1rem) {
+@mixin rb-padding-lr($size: 1rem) {
   padding-right: $size;
   padding-left: $size;
 }
 
-@mixin rb-padding-tb_x($size: 1rem) {
+@mixin rb-padding-tb($size: 1rem) {
   padding-top: $size;
   padding-bottom: $size;
 }

@@ -48,7 +48,7 @@ button, a, input, textarea {
   @include rb-bg-color($color_main, lighten($color_main, 10), 200ms);
   @include rb-f-color($color_button-text);
 
-  @include rb-smooth-corners_x();
+  @include rb-smooth-corners();
   cursor: pointer;
   user-select: none;
 

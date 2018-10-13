@@ -21,7 +21,7 @@
 
 .topic {
   &__title {
-	@include rb-f-size_x(0.9);
+	@include rb-f-size(0.9rem);
   }
 
   &__data {

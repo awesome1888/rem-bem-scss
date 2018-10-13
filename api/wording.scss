@@ -3,7 +3,7 @@
   line-height: 150%;
 }
 
-@mixin rb-f-reset() {
+@mixin rb-reset() {
   font-style: normal;
   letter-spacing: normal;
   direction: ltr;
@@ -20,7 +20,7 @@
 /**
  * Sets a constant (no matter if the item is focused, hovered, active, etc...) font color
  */
-@mixin rb-f-color($color: inherit, $h-color: $color, $transition-time: 0) {
+@mixin rb-color($color: inherit, $h-color: $color, $transition-time: 0) {
   color: $color;
   &:focus, &:active {
     color: $color;

@@ -6,53 +6,53 @@
   $prev: $i - 1;
   $half: $i - 0.5;
 
-  .rb-margin_x#{if($i == 1, '', $i)} {
-	@include rb-margin_x($i);
+  .rb-margin_#{if($i == 1, '', $i)} {
+	margin: #{$i}rem;
   }
-  .rb-margin_x#{$prev}p5 {
-	@include rb-margin_x($half);
-  }
-
-  .rb-margin-t_x#{if($i == 1, '', $i)} {
-	@include rb-margin-t_x($i);
-  }
-  .rb-margin-t_x#{$prev}p5 {
-	@include rb-margin-t_x($half);
+  .rb-margin_#{$prev}p5 {
+	margin: #{$half}rem;
   }
 
-  .rb-margin-b_x#{if($i == 1, '', $i)} {
-	@include rb-margin-b_x($i);
+  .rb-margin-t_#{if($i == 1, '', $i)} {
+	margin-top: #{$i}rem;
   }
-  .rb-margin-b_x#{$prev}p5 {
-	@include rb-margin-b_x($half);
-  }
-
-  .rb-margin-l_x#{if($i == 1, '', $i)} {
-	@include rb-margin-l_x($i);
-  }
-  .rb-margin-l_x#{$prev}p5 {
-	@include rb-margin-l_x($half);
+  .rb-margin-t_#{$prev}p5 {
+	margin-top: #{$half}rem;
   }
 
-  .rb-margin-r_x#{if($i == 1, '', $i)} {
-	@include rb-margin-r_x($i);
+  .rb-margin-b_#{if($i == 1, '', $i)} {
+	margin-bottom: #{$i}rem;
   }
-  .rb-margin-r_x#{$prev}p5 {
-	@include rb-margin-r_x($half);
-  }
-
-  .rb-margin-tb_x#{if($i == 1, '', $i)} {
-	@include rb-margin-tb_x($i);
-  }
-  .rb-margin-tb_x#{$prev}p5 {
-	@include rb-margin-tb_x($half);
+  .rb-margin-b_#{$prev}p5 {
+	margin-bottom: #{$half}rem;
   }
 
-  .rb-margin-lr_x#{if($i == 1, '', $i)} {
-	@include rb-margin-lr_x($i);
+  .rb-margin-l_#{if($i == 1, '', $i)} {
+	margin-left: #{$i}rem;
   }
-  .rb-margin-lr_x#{$prev}p5 {
-	@include rb-margin-lr_x($half);
+  .rb-margin-l_#{$prev}p5 {
+	margin-left: #{$half}rem;
+  }
+
+  .rb-margin-r_#{if($i == 1, '', $i)} {
+	margin-right: #{$i}rem;
+  }
+  .rb-margin-r_#{$prev}p5 {
+	margin-right: #{$half}rem;
+  }
+
+  .rb-margin-tb_#{if($i == 1, '', $i)} {
+	@include rb-margin-tb(#{$i});
+  }
+  .rb-margin-tb_#{$prev}p5 {
+	@include rb-margin-tb(#{$half}rem);
+  }
+
+  .rb-margin-lr_#{if($i == 1, '', $i)} {
+	@include rb-margin-lr(#{$i});
+  }
+  .rb-margin-lr_#{$prev}p5 {
+	@include rb-margin-lr(#{$half}rem);
   }
 }
 
@@ -63,62 +63,62 @@
   $prev: $i - 1;
   $half: $i - 0.5;
 
-  .rb-padding_x#{if($i == 1, '', $i)} {
-	@include rb-padding_x($i);
+  .rb-padding_#{if($i == 1, '', $i)} {
+	padding: #{$i}rem;
   }
-  .rb-padding_x#{$prev}p5 {
-	@include rb-padding_x($half);
-  }
-
-  .rb-padding-t_x#{if($i == 1, '', $i)} {
-	@include rb-padding-t_x($i);
-  }
-  .rb-padding-t_x#{$prev}p5 {
-	@include rb-padding-t_x($half);
+  .rb-padding_#{$prev}p5 {
+	padding: #{$half}rem;
   }
 
-  .rb-padding-b_x#{if($i == 1, '', $i)} {
-	@include rb-padding-b_x($i);
+  .rb-padding-t_#{if($i == 1, '', $i)} {
+	padding-top: #{$i}rem;
   }
-  .rb-padding-b_x#{$prev}p5 {
-	@include rb-padding-b_x($half);
-  }
-
-  .rb-padding-l_x#{if($i == 1, '', $i)} {
-	@include rb-padding-l_x($i);
-  }
-  .rb-padding-l_x#{$prev}p5 {
-	@include rb-padding-l_x($half);
+  .rb-padding-t_#{$prev}p5 {
+	padding-top: #{$half}rem;
   }
 
-  .rb-padding-r_x#{if($i == 1, '', $i)} {
-	@include rb-padding-r_x($i);
+  .rb-padding-b_#{if($i == 1, '', $i)} {
+	padding-bottom: #{$i}rem;
   }
-  .rb-padding-r_x#{$prev}p5 {
-	@include rb-padding-r_x($half);
-  }
-
-  .rb-padding-tb_x#{if($i == 1, '', $i)} {
-	@include rb-padding-tb_x($i);
-  }
-  .rb-padding-tb_x#{$prev}p5 {
-	@include rb-padding-tb_x($half);
+  .rb-padding-b_#{$prev}p5 {
+	padding-bottom: #{$half}rem;
   }
 
-  .rb-padding-lr_x#{if($i == 1, '', $i)} {
-	@include rb-padding-lr_x($i);
+  .rb-padding-l_#{if($i == 1, '', $i)} {
+	padding-left: #{$i}rem;
   }
-  .rb-padding-lr_x#{$prev}p5 {
-	@include rb-padding-lr_x($half);
+  .rb-padding-l_#{$prev}p5 {
+	padding-left: #{$half}rem;
+  }
+
+  .rb-padding-r_#{if($i == 1, '', $i)} {
+	padding-right: #{$i}rem;
+  }
+  .rb-padding-r_#{$prev}p5 {
+	padding-right: #{$half}rem;
+  }
+
+  .rb-padding-tb_#{if($i == 1, '', $i)} {
+	@include rb-padding-tb(#{$i});
+  }
+  .rb-padding-tb_#{$prev}p5 {
+	@include rb-padding-tb(#{$half}rem);
+  }
+
+  .rb-padding-lr_#{if($i == 1, '', $i)} {
+	@include rb-padding-lr(#{$i});
+  }
+  .rb-padding-lr_#{$prev}p5 {
+	@include rb-padding-lr(#{$half}rem);
   }
 }
 
 /* groups */
 
-.rb-group_x {
-  @include rb-group_x();
+.rb-group {
+  @include rb-group();
 }
 
-.rb-group_x0p5 {
-  @include rb-group_x(0.5);
+.rb-group_0p5 {
+  @include rb-group(0.5);
 }
