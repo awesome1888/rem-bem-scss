@@ -15,7 +15,7 @@
   }
 }
 
-@mixin rb-icon-label_x($code: 'help', $size: inherit, $icon-v-alignment: baseline, $icon-h-alignment: 0, $icon-width: auto, $distance: 0) {
+@mixin rb-icon-label($code: 'help', $size: inherit, $icon-v-alignment: baseline, $icon-h-alignment: 0, $icon-width: auto, $distance: 0) {
   @include rb-flex();
   @if $icon-v-alignment == baseline {
     @include rb-flex-align-items_baseline();
@@ -25,18 +25,18 @@
 
   &:before {
     flex-shrink: 0;
-    @include rb-padding-r_x($distance);
+    padding-right: $distance;
     font-family: 'Material Icons', serif;
     @include rb-f-reset();
-    font-size: if($size == inherit, $size, $size * 1rem);
+    font-size: $size;
     text-align: center;
-    width: if($icon-width == auto, $icon-width, $icon-width * 1rem);
+    width: $icon-width;
 
     @if $icon-v-alignment != baseline {
-      @include rb-margin-t_x($icon-v-alignment);
+      margin-top: $icon-v-alignment;
     }
     @if $icon-h-alignment != 0 {
-      @include rb-margin-l_x($icon-h-alignment);
+      margin-bottom: $icon-h-alignment;
     }
   }
 }

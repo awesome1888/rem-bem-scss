@@ -1,11 +1,11 @@
-@mixin rb-group_x($size-h: 1, $size-w: $size-h) {
+@mixin rb-group($size-h: 1rem, $size-w: $size-h) {
   & > * {
-    @include rb-margin-b_x($size-h);
-    @include rb-margin-r_x($size-w);
+    margin-bottom: $size-h;
+    margin-right: $size-w;
   }
 
-  @include rb-margin-b_x($size-h * -1);
-  @include rb-margin-r_x($size-w * -1);
+  margin-bottom: $size-h * -1;
+  margin-right: $size-w * -1;
 }
 
 @mixin rb-centered($max-width: 960px) {

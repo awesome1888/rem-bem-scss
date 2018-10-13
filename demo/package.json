@@ -8,7 +8,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4",
-    "rem-bem-scss": "^1.0.0"
+    "rem-bem-scss": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,6 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.9.3"
   }
 }

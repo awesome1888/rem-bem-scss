@@ -17,83 +17,43 @@
   }
 }
 
-@mixin rb-rectangle_x($width: 1, $height: $width, $scale: 1) {
+@mixin rb-rectangle($width: 1rem, $height: $width, $scale: 1) {
   @if ($height == false) {
     $height: $width;
   }
 
-  height: $height * $scale * 1rem;
-  width: $width * $scale * 1rem;
+  height: $height * $scale;
+  width: $width * $scale;
 }
 
 @mixin rb-round() {
   border-radius: 99999rem;
 }
 
-@mixin rb-smooth-corners_x($radius: 0.1) {
-  border-radius: $radius * 1rem;
+@mixin rb-smooth-corners($radius: 0.1) {
+  border-radius: $radius;
 }
 
 /* margins */
 
-@mixin rb-margin_x($size-h: 1, $size-w: $size-h) {
-  margin: $size-h * 1rem $size-w * 1rem;
+@mixin rb-margin-lr($size: 1rem) {
+  margin-right: $size;
+  margin-left: $size;
 }
 
-@mixin rb-margin-t_x($size: 1) {
-  margin-top: $size * 1rem;
-}
-
-@mixin rb-margin-b_x($size: 1) {
-  margin-bottom: $size * 1rem;
-}
-
-@mixin rb-margin-l_x($size: 1) {
-  margin-left: $size * 1rem;
-}
-
-@mixin rb-margin-r_x($size: 1) {
-  margin-right: $size * 1rem;
-}
-
-@mixin rb-margin-lr_x($size: 1) {
-  margin-right: $size * 1rem;
-  margin-left: $size * 1rem;
-}
-
-@mixin rb-margin-tb_x($size: 1) {
-  margin-top: $size * 1rem;
-  margin-bottom: $size * 1rem;
+@mixin rb-margin-tb_x($size: 1rem) {
+  margin-top: $size;
+  margin-bottom: $size;
 }
 
 /* paddings */
 
-@mixin rb-padding_x($size-h: 1, $size-w: $size-h) {
-  padding: $size-h * 1rem $size-w * 1rem;
+@mixin rb-padding-lr_x($size: 1rem) {
+  padding-right: $size;
+  padding-left: $size;
 }
 
-@mixin rb-padding-t_x($size: 1) {
-  padding-top: $size * 1rem;
-}
-
-@mixin rb-padding-b_x($size: 1) {
-  padding-bottom: $size * 1rem;
-}
-
-@mixin rb-padding-l_x($size: 1) {
-  padding-left: $size * 1rem;
-}
-
-@mixin rb-padding-r_x($size: 1) {
-  padding-right: $size * 1rem;
-}
-
-@mixin rb-padding-lr_x($size: 1) {
-  padding-right: $size * 1rem;
-  padding-left: $size * 1rem;
-}
-
-@mixin rb-padding-tb_x($size: 1) {
-  padding-top: $size * 1rem;
-  padding-bottom: $size * 1rem;
+@mixin rb-padding-tb_x($size: 1rem) {
+  padding-top: $size;
+  padding-bottom: $size;
 }

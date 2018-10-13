@@ -1,0 +1,7 @@
+@import 'rem-bem-scss/api/index.scss';
+// @import 'foundation-sites/scss/foundation.scss';
+@import './theme';
+
+.hz {
+  @include rb-group_x();
+}
