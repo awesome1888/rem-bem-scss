@@ -41,12 +41,28 @@
   }
 }
 
-@mixin rb-bg-color($color: inherit, $h-color: false, $transition-time: 0) {
+@mixin rb-bg-color($color: inherit, $h-color: false, $f-color: false, $transition-time: 0) {
   background-color: $color;
 
+  /* specify the color for hover, or use the main one */
   @if $h-color != false {
     &:hover {
       background-color: $h-color;
+    }
+  } @else {
+    &:hover {
+      background-color: $color;
+    }
+  }
+
+  /* specify the color for focus, or use the main one */
+  @if $f-color != false {
+    &:focus {
+      background-color: $h-color;
+    }
+  } @else {
+    &:focus {
+      background-color: $color;
     }
   }
 

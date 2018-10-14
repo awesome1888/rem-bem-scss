@@ -30,7 +30,7 @@
   border-radius: 99999rem;
 }
 
-@mixin rb-smooth-corners($radius: 0.1) {
+@mixin rb-smooth-corners($radius: 0.1rem) {
   border-radius: $radius;
 }
 
