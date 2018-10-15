@@ -6,49 +6,49 @@
   $prev: $i - 1;
   $half: $i - 0.5;
 
-  .rb-margin_#{if($i == 1, '', $i)} {
+  .rb-margin#{if($i == 1, '', '_#{$i}')} {
 	margin: #{$i}rem;
   }
   .rb-margin_#{$prev}p5 {
 	margin: #{$half}rem;
   }
 
-  .rb-margin-t_#{if($i == 1, '', $i)} {
+  .rb-margin-t#{if($i == 1, '', '_#{$i}')} {
 	margin-top: #{$i}rem;
   }
   .rb-margin-t_#{$prev}p5 {
 	margin-top: #{$half}rem;
   }
 
-  .rb-margin-b_#{if($i == 1, '', $i)} {
+  .rb-margin-b#{if($i == 1, '', '_#{$i}')} {
 	margin-bottom: #{$i}rem;
   }
   .rb-margin-b_#{$prev}p5 {
 	margin-bottom: #{$half}rem;
   }
 
-  .rb-margin-l_#{if($i == 1, '', $i)} {
+  .rb-margin-l#{if($i == 1, '', '_#{$i}')} {
 	margin-left: #{$i}rem;
   }
   .rb-margin-l_#{$prev}p5 {
 	margin-left: #{$half}rem;
   }
 
-  .rb-margin-r_#{if($i == 1, '', $i)} {
+  .rb-margin-r#{if($i == 1, '', '_#{$i}')} {
 	margin-right: #{$i}rem;
   }
   .rb-margin-r_#{$prev}p5 {
 	margin-right: #{$half}rem;
   }
 
-  .rb-margin-tb_#{if($i == 1, '', $i)} {
+  .rb-margin-tb#{if($i == 1, '', '_#{$i}')} {
 	@include rb-margin-tb(#{$i});
   }
   .rb-margin-tb_#{$prev}p5 {
 	@include rb-margin-tb(#{$half}rem);
   }
 
-  .rb-margin-lr_#{if($i == 1, '', $i)} {
+  .rb-margin-lr#{if($i == 1, '', '_#{$i}')} {
 	@include rb-margin-lr(#{$i});
   }
   .rb-margin-lr_#{$prev}p5 {
@@ -63,49 +63,49 @@
   $prev: $i - 1;
   $half: $i - 0.5;
 
-  .rb-padding_#{if($i == 1, '', $i)} {
+  .rb-padding#{if($i == 1, '', '_#{$i}')} {
 	padding: #{$i}rem;
   }
   .rb-padding_#{$prev}p5 {
 	padding: #{$half}rem;
   }
 
-  .rb-padding-t_#{if($i == 1, '', $i)} {
+  .rb-padding-t#{if($i == 1, '', '_#{$i}')} {
 	padding-top: #{$i}rem;
   }
   .rb-padding-t_#{$prev}p5 {
 	padding-top: #{$half}rem;
   }
 
-  .rb-padding-b_#{if($i == 1, '', $i)} {
+  .rb-padding-b#{if($i == 1, '', '_#{$i}')} {
 	padding-bottom: #{$i}rem;
   }
   .rb-padding-b_#{$prev}p5 {
 	padding-bottom: #{$half}rem;
   }
 
-  .rb-padding-l_#{if($i == 1, '', $i)} {
+  .rb-padding-l#{if($i == 1, '', '_#{$i}')} {
 	padding-left: #{$i}rem;
   }
   .rb-padding-l_#{$prev}p5 {
 	padding-left: #{$half}rem;
   }
 
-  .rb-padding-r_#{if($i == 1, '', $i)} {
+  .rb-padding-r#{if($i == 1, '', '_#{$i}')} {
 	padding-right: #{$i}rem;
   }
   .rb-padding-r_#{$prev}p5 {
 	padding-right: #{$half}rem;
   }
 
-  .rb-padding-tb_#{if($i == 1, '', $i)} {
+  .rb-padding-tb#{if($i == 1, '', '_#{$i}')} {
 	@include rb-padding-tb(#{$i});
   }
   .rb-padding-tb_#{$prev}p5 {
 	@include rb-padding-tb(#{$half}rem);
   }
 
-  .rb-padding-lr_#{if($i == 1, '', $i)} {
+  .rb-padding-lr#{if($i == 1, '', '_#{$i}')} {
 	@include rb-padding-lr(#{$i});
   }
   .rb-padding-lr_#{$prev}p5 {
